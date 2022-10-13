@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- IMAGES ELEMENTS -->
+    <!-- img atribut
+    src
+    alt
+    width & height
+    title
+    srcset
+    sizes
+    loading
+    -->
+
+    <img src="kucing.jpg" alt="kucing" width="100px" title="ini kucing" loading="lazy">
+    <!-- srcset="d" = biar responsif -->
+
+    <!-- merepresentasikan konten yang berdiri  sendiri tanpa mempengaruhi flow halaman, bisa gambar, ilustrasi, diagram, code snippet -->
+    <figure>
+        <img src="kucing.jpg" alt="kucing">
+        <figcaption>
+            apa ya, ini adalah caption untuk image diatas, udah gitu aja si
+        </figcaption>
+    </figure>
+
+    <!-- untuk optimasi halaman agar mengemat bandwidth dan mempercepat load time, bisa digunakan untuk art direction utk menampilkan gambar yang berbeda pada display/device yg berbeda -->
+    <picture>
+        <source media="(min-width: 960px)" srcset="kucing2.jpg" sizes="50vw">
+        <img src="kucing.jpg" alt="kucing">
+    </picture>
+</body>
+
+</html>
