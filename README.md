@@ -1,2 +1,4 @@
 # reference
-untuk latihan dan referensi
+jji bgt woii astaga
+<br>
+formal bgt😭
