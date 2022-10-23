@@ -13,19 +13,19 @@ int main()
     cout << "Masukkan ukuran lingkar baju: ";
     cin >> li;
 
-    if (l == 10 && (p == 40) && (li = 90))
+    if (l <= 10 && (p <= 40) && (li <= 90))
     {
         cout << "ukuran baju yang tepat adalah S";
     }
-    else if ((l == 14) && (p == 60) && (li = 120))
+    else if ((l <= 14) && (p <= 60) && (li <= 120))
     {
         cout << "ukuran baju yang tepat adalah M";
     }
-    else if ((l == 18) && (p == 80) && (li = 180))
+    else if ((l <= 18) && (p <= 80) && (li <= 180))
     {
         cout << "ukuran baju yang tepat adalah L";
     }
-    else if ((l == 25) && (p == 100) && (li = 220))
+    else
     {
         cout << "ukuran baju yang tepat adalah XL";
     }
