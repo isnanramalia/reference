@@ -125,7 +125,7 @@ int main()
             }
             else if (500000 <= harganormal && harganormal <= 999999)
             {
-                cout << "yang harus kamu bayar: " << hargadiskon5 + 1;
+                cout << "yang harus kamu bayar: " << hargadiskon5 + 1; // ini gatau tapi dia bug, hasilnya ada -1, aneh banget. jdinya aku tambahin +1 disitu wkekek
                 cout << "\nkembalian kamu " << uang - hargadiskon5 - 1;
             }
             else if (harganormal < 500000)
