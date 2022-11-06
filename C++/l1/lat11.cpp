@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// SOAL DASPRO UTS-A
+// SOAL DASPRO UTS - A
 // UTS smt 1 - no 2
 int main()
 {
@@ -9,11 +9,11 @@ int main()
 
     cout << "---JENIS HOTEL---";
     cout << "\nP/p = premium";
-    cout << "\nE/e = eksklusif";
+    cout << "\nE/e = eksklusif\n";
     cout << "\ninput jenis hotel: ";
     cin >> jenishotel;
 
-    if (jenishotel == 'p')
+    if (jenishotel == 'p' || jenishotel == 'P')
     {
         cout << "input berapa hari: ";
         cin >> hari;
@@ -41,7 +41,8 @@ int main()
             }
             else
             {
-                cout << "inputan salah";
+                cout << "yang harus kamu bayar: " << harganormal;
+                cout << "\nkembalian kamu " << uang - harganormal;
             }
         }
         else if (4 <= hari && hari <= 6)
@@ -68,7 +69,8 @@ int main()
             }
             else
             {
-                cout << "inputan salah";
+                cout << "yang harus kamu bayar: " << harganormal;
+                cout << "\nkembalian kamu " << uang - harganormal;
             }
         }
         else if (hari > 6)
@@ -95,7 +97,8 @@ int main()
             }
             else
             {
-                cout << "inputan salah";
+                cout << "yang harus kamu bayar: " << harganormal;
+                cout << "\nkembalian kamu " << uang - harganormal;
             }
         }
         else
@@ -104,7 +107,7 @@ int main()
         }
     }
 
-    else if (jenishotel == 'e')
+    else if (jenishotel == 'e' || jenishotel == 'E')
     {
         cout << "input berapa hari: ";
         cin >> hari;
@@ -122,8 +125,8 @@ int main()
             }
             else if (500000 <= harganormal && harganormal <= 999999)
             {
-                cout << "yang harus kamu bayar: " << hargadiskon5;
-                cout << "\nkembalian kamu " << uang - hargadiskon5;
+                cout << "yang harus kamu bayar: " << hargadiskon5 + 1;
+                cout << "\nkembalian kamu " << uang - hargadiskon5 - 1;
             }
             else if (harganormal < 500000)
             {
@@ -132,7 +135,8 @@ int main()
             }
             else
             {
-                cout << "inputan salah";
+                cout << "yang harus kamu bayar: " << harganormal;
+                cout << "\nkembalian kamu " << uang - harganormal;
             }
         }
         else if (4 <= hari && hari <= 6)
@@ -159,7 +163,8 @@ int main()
             }
             else
             {
-                cout << "inputan salah";
+                cout << "yang harus kamu bayar: " << harganormal;
+                cout << "\nkembalian kamu " << uang - harganormal;
             }
         }
         else if (hari > 6)
@@ -184,9 +189,9 @@ int main()
                 cout << "yang harus kamu bayar: " << harganormal;
                 cout << "\nkembalian kamu " << uang - harganormal;
             }
-            else
             {
-                cout << "inputan salah";
+                cout << "yang harus kamu bayar: " << harganormal;
+                cout << "\nkembalian kamu " << uang - harganormal;
             }
         }
         else
@@ -194,6 +199,8 @@ int main()
             cout << "inputan salah";
         }
     }
+    else
+        cout << "inputan salah";
 
     return 0;
 }
