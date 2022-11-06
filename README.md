@@ -1,4 +1,4 @@
 # reference
-jji bgt woii astaga
+jji woii astaga
 <br>
 formal bgt😭
